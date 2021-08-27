@@ -12,8 +12,8 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>クリサポくんです</p>
         <p>
-          My Blog page is <Link href="/posts/first-post">
-            <a>here.</a>
+         ブログは <Link href="/posts/first-post">
+            <a>こちら</a>
           </Link>
         </p>
       </section>
