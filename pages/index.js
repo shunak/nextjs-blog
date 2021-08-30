@@ -10,10 +10,10 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi. I'm Sayu Hagihara. Heroine of the story "Higehiro".</p>
+        <p>クリサポくんです</p>
         <p>
-          My Blog page is <Link href="/posts/first-post">
-            <a>here.</a>
+         ブログは <Link href="/posts/first-post">
+            <a>こちら</a>
           </Link>
         </p>
       </section>
