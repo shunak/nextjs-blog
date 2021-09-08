@@ -23,11 +23,6 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>クリサポくんです</p>
-        <p>
-         ブログは <Link href="/posts/first-post">
-            <a>こちら</a>
-          </Link>
-        </p>
       </section>
 	<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
