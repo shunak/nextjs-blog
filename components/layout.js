@@ -8,11 +8,6 @@ const name = "クリサポくん";
 export const siteTitle = "Next.js Sample Website";
 
 
-const myLoader = ({src}) => {
-  return `${src}`;
-};
-
-
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
@@ -35,18 +30,12 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
-				loader={myLoader}
+              priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
-              // priority
-              // src="/images/profile.jpg"
-              // className={utilStyles.borderCircle}
-              // height={144}
-              // width={144}
-              // alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
