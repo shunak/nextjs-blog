@@ -7,13 +7,12 @@ import Link from 'next/link'
 const name = 'クリサポくん'
 export const siteTitle = 'Next.js Sample Website'
 
-
 // replace [yourprojectname] and [yourdomain.com] with your actual project name and (custom) domain
 const cloudflareImageLoader = ({ src, width, quality }) => {
   if (!quality) {
     quality = 75
   }
-  return `https://images.shu-ch.workers.dev?width=${width}&quality=${quality}&image=https://[yourdomain.com]${src}`
+  return `https://images.shu-ch.workers.dev?width=${width}&quality=${quality}&image=https://storage.googleapis.com/nextblog-img/${src}`
 }
 
 export default function Layout({
@@ -45,7 +44,8 @@ export default function Layout({
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              // src="/images/profile.jpg"
+              src="flog.jpeg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -59,7 +59,8 @@ export default function Layout({
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  // src="/images/profile.jpg"
+                  src="flog.jpeg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
