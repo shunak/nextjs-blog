@@ -3,5 +3,5 @@ const cloudflareImageLoader = ({ src, width, quality }) => {
   if (!quality) {
     quality = 75
   }
-  return `https://images.[yourprojectname].workers.dev?width=${width}&quality=${quality}&image=https://[yourdomain.com]${src}`
+  return `https://images.shu-ch.workers.dev?width=${width}&quality=${quality}&image=https://storage.googleapis.com/nextblog-img/${src}`
 }
