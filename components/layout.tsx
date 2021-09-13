@@ -45,6 +45,7 @@ export default function Layout({
             <Image
               priority
               // src="/images/profile.jpg"
+			  loader={cloudflareImageLoader}
               src="flog.jpeg"
               className={utilStyles.borderCircle}
               height={144}
@@ -60,6 +61,7 @@ export default function Layout({
                 <Image
                   priority
                   // src="/images/profile.jpg"
+				  loader={cloudflareImageLoader}
                   src="flog.jpeg"
                   className={utilStyles.borderCircle}
                   height={108}
