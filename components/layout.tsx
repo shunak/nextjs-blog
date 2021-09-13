@@ -44,7 +44,6 @@ export default function Layout({
           <>
             <Image
               priority
-              // src="/images/profile.jpg"
 			  loader={cloudflareImageLoader}
               src="flog.jpeg"
               className={utilStyles.borderCircle}
@@ -60,7 +59,6 @@ export default function Layout({
               <a>
                 <Image
                   priority
-                  // src="/images/profile.jpg"
 				  loader={cloudflareImageLoader}
                   src="flog.jpeg"
                   className={utilStyles.borderCircle}
@@ -95,6 +93,7 @@ export default function Layout({
 
 
 
+// src="/images/profile.jpg"
 
 // import Head from "next/head";
 // import Image from "next/image";
